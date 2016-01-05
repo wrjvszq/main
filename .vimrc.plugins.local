@@ -4,3 +4,5 @@
 
 " Add your customized plugins:
 " Example: Plugin 'foo/bar/foobar'
+Plugin 'vim-multiple-cursors'
+Plugin 'google.vim'
