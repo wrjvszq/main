@@ -22,13 +22,9 @@ func SetTitle()
 "    elseif &filetype == 'mkd'
 "        call setline(1,"<head><meta charset=\"UTF-8\"></head>")
 	else 
-		call setline(1, "/*************************************************************************") 
-		call append(line("."), "	> File Name: ".expand("%")) 
-		call append(line(".")+1, "	> Author: @wangruijie02") 
-		call append(line(".")+2, "	> Mail: wangruijie02@meituan.com") 
-		call append(line(".")+3, "	> Created Time: ".strftime("%c")) 
-		call append(line(".")+4, " ************************************************************************/") 
-		call append(line(".")+5, "")
+		call setline(1, "/*") 
+		call append(line("."), " * Copyright (C) 2017 Beijing Sankuai, Inc.")
+		call append(line(".")+1, " */")
 	endif
 	if expand("%:e") == 'cpp'
 		call append(line(".")+6, "#include<iostream>")
